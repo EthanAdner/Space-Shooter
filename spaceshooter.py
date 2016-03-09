@@ -7,3 +7,16 @@ Assignment:
 Write and submit a program that implements the spacewar game:
 https://github.com/HHS-IntroProgramming/Spacewar
 """
+from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+SCREEN_WIDTH = 640
+SCREEN_HEIGHT = 480
+
+class SpaceG(App):
+    def __init__(self, width, height):
+        super().__init__(width, height)
+        black=Color(0,1)
+        noline = LineStyle(0,black)
+        bg_asset = RectangleAsset(width, height, noline, black)
+        bg = Sprite(bg_asset, (0,0))
+myapp=SpaceG(SCREEN_WIDTH, SCREEN_HEIGHT)
