@@ -26,9 +26,9 @@ class SpaceShip(Sprite):
 
     def __init__(self, position):
         super().__init__(SpaceShip.asset, position)
-        self.vx = 0
-        self.vy = 0
-        self.vr = 0.0
+        self.vx = 1
+        self.vy = 1
+        self.vr = 12.0
         self.thrust = 0
         self.thrustframe = 1
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
