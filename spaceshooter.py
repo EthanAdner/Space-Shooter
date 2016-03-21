@@ -66,7 +66,7 @@ class SpaceShip(Sprite):
         
     def stop(self, event):
         self.vx=0
-        slef.vy=0
+        self.vy=0
         
     def left(self, event):
         self.vx=-1
