@@ -33,7 +33,7 @@ class SpaceShip(Sprite):
         self.thrustframe = 1
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        SpaceGame.listenKeyEvent("keydown", "a", self.forward)
+        SpaceGame.listenKeyEvent("keydown", "a", self.backward)
         SpaceGame.listenKeyEvent("keyup", "a", self.backward)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
