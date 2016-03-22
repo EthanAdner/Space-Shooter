@@ -15,7 +15,7 @@ by E. Dennison
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 from math import sin, cos, pi
 
-SCREEN_WIDTH = 1100
+SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 700
 
 
