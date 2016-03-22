@@ -83,10 +83,10 @@ class SpaceShip(Sprite):
         self.vy=1
     
     def clockwise(self, event):
-        self.vr=.01
+        self.vr=.05
         
     def cntrclockwise(self, event):
-        self.vr=-.01
+        self.vr=-.05
 
 
 class SpaceGame(App):
