@@ -74,7 +74,8 @@ class SpaceShip(Sprite):
         self.vx=1
         
     def stopr(self, event):
-        self.vr=0
+        self.vr=self.vr
+        
     def stop(self, event):
         self.vx=0
         self.vy=0
