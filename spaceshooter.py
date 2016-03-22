@@ -19,7 +19,7 @@ SCREEN_HEIGHT = 700
 
 
 class SpaceShip(Sprite):
-    """
+"""
     #Animated space ship
 """
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
