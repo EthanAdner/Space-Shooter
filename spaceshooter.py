@@ -13,8 +13,8 @@ by E. Dennison
 """
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
 
 
 class SpaceShip(Sprite):
@@ -61,6 +61,7 @@ class SpaceShip(Sprite):
 
     def thrustOn(self, event):
         self.thrust = 1
+        
 
     def thrustOff(self, event):
         self.thrust = 0
