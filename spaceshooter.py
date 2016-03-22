@@ -65,7 +65,7 @@ class SpaceShip(Sprite):
     def thrustOn(self, event):
         self.thrust = 1
         self.vx=cos(self.rotation+1/2*pi)
-        self.vy=sin(self.rotation+1/2*pi)
+        self.vy=sin(self.rotation-1/2*pi)
 
     def thrustOff(self, event):
         self.thrust = 0
