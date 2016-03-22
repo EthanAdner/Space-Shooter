@@ -13,8 +13,8 @@ by E. Dennison
 """
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 800
+SCREEN_WIDTH = 1200
+SCREEN_HEIGHT = 700
 
 
 class SpaceShip(Sprite):
