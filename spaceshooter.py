@@ -93,9 +93,9 @@ class SpaceShip(Sprite):
 
 
 class SpaceGame(App):
-    """
+   
     #Tutorial4 space game example.
-    """
+   
     def __init__(self, width, height):
         super().__init__(width, height)
         black = Color(0, 1)
