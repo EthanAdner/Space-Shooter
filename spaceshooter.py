@@ -126,6 +126,8 @@ class SpaceGame(App):
         bg2 = Sprite(bg_asset, (512,0))
         bg3 = Sprite(bg_asset, (0,512))
         bg4 = Sprite(bg_asset, (512,512))
+        bg3 = Sprite(bg_asset, (1024,0))
+        bg4 = Sprite(bg_asset, (1024,1024))
         SpaceShip((100,100))
         
 
