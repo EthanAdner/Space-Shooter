@@ -11,7 +11,7 @@ https://github.com/HHS-IntroProgramming/Spacewar
 tutorial4.py
 by E. Dennison
 """
-"""
+
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 SCREEN_WIDTH = 1200
@@ -20,10 +20,10 @@ SCREEN_HEIGHT = 700
 
 class SpaceShip(Sprite):
 """
-    #Animated space ship
+    Animated space ship
 """
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
-        Frame(227,0,292-227,125), 4, 'vertical')
+    Frame(227,0,292-227,125), 4, 'vertical')
 
     def __init__(self, position):
         super().__init__(SpaceShip.asset, position)
@@ -111,4 +111,4 @@ class SpaceGame(App):
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
-myapp.run()"""
+myapp.run()
