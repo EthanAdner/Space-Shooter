@@ -11,6 +11,7 @@ https://github.com/HHS-IntroProgramming/Spacewar
 tutorial4.py
 by E. Dennison
 """
+"""
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 SCREEN_WIDTH = 1200
@@ -110,4 +111,4 @@ class SpaceGame(App):
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
-myapp.run()
+myapp.run()"""
