@@ -72,10 +72,10 @@ class SpaceShip(Sprite):
         self.vx=-1
     
     def up(self, event):
-        self.vy=1
-        
-    def down(slef, event):
         self.vy=-1
+        
+    def down(self, event):
+        self.vy=1
 
 
 class SpaceGame(App):
