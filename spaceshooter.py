@@ -41,6 +41,10 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "w", self.stop)
         SpaceGame.listenKeyEvent("keydown", "s", self.down)
         SpaceGame.listenKeyEvent("keyup", "s", self.stop)
+        SpaceGame.listenKeyEvent("keydown", "q", self.clockwise)
+        SpaceGame.listenKeyEvent("keyup", "q", self.stop)
+        SpaceGame.listenKeyEvent("keydown", "e", self.cntrclocwise)
+        SpaceGame.listenKeyEvent("keyup", "e", self.stop)
         self.fxcenter = self.fycenter = 0.5
 
     def step(self):
@@ -76,6 +80,12 @@ class SpaceShip(Sprite):
         
     def down(self, event):
         self.vy=1
+    
+    def clockwise(self, event):
+        self.vr=1
+        
+    def cntrclockwise(self, event):
+        self.vr=-1
 
 
 class SpaceGame(App):
