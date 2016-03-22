@@ -13,7 +13,7 @@ by E. Dennison
 """
 
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
-from math import sin, cos
+from math import sin, cos, pi
 
 SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 700
@@ -64,8 +64,8 @@ class SpaceShip(Sprite):
 
     def thrustOn(self, event):
         self.thrust = 1
-        self.vx=cos(self.rotation)
-        self.vy=sin(self.rotation)
+        self.vx=cos(self.rotation+1/2*pi)
+        self.vy=sin(self.rotation+1/2*pi)
 
     def thrustOff(self, event):
         self.thrust = 0
