@@ -19,6 +19,16 @@ SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 700
 
 
+class Stars(Sprite):
+
+    asset = ImageAsset("images/starfield.jpg")
+    width = 512
+    height = 512
+
+    def __init__(self, position):
+        super().__init__(Stars.asset, position)
+
+
 class SpaceShip(Sprite):
     
 #    Animated space ship
