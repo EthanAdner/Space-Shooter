@@ -19,7 +19,7 @@ SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 700
 
 
-class Stars(Sprite):
+"""class Stars(Sprite):
 
     asset = ImageAsset("images/starfield.jpg")
     width = 512
@@ -28,7 +28,7 @@ class Stars(Sprite):
     def __init__(self, position):
         super().__init__(Stars.asset, position)
 
-
+"""
 class SpaceShip(Sprite):
     
 #    Animated space ship
@@ -121,7 +121,7 @@ class SpaceGame(App):
         super().__init__(width, height)
         black = Color(0, 1)
         noline = LineStyle(0, black)
-        bg_asset = RectangleAsset(width, height, noline, black)
+        bg_asset = ImageAsset("images/starfield.jpg")
         bg = Sprite(bg_asset, (0,0))
         SpaceShip((100,100))
         
