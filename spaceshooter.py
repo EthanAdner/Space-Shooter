@@ -71,6 +71,7 @@ class SpaceShip(Sprite):
     def stop(self, event):
         self.vx=0
         self.vy=0
+        self.vr=0
         
     def left(self, event):
         self.vx=-1
@@ -82,10 +83,10 @@ class SpaceShip(Sprite):
         self.vy=1
     
     def clockwise(self, event):
-        self.vr=1
+        self.vr=.01
         
     def cntrclockwise(self, event):
-        self.vr=-1
+        self.vr=-.01
 
 
 class SpaceGame(App):
