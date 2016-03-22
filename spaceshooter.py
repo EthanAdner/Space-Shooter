@@ -123,6 +123,8 @@ class SpaceGame(App):
         noline = LineStyle(0, black)
         bg_asset = ImageAsset("images/starfield.jpg")
         bg = Sprite(bg_asset, (0,0))
+        bg = Sprit(bg_asset, (512,0))
+        bg = Sprit(bg_asset, (0,512))
         SpaceShip((100,100))
         
 
