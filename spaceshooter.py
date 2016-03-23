@@ -73,17 +73,11 @@ class SpaceShip(Sprite):
     def thrustOn(self, event):
         self.thrust = 1
         
-        
-        
     def thrustOff(self, event):
         self.thrust = 0
         
-        
-   
-        
     def stopr(self, event):
         self.vr=0
-        
     
     def clockwise(self, event):
         self.vr=.05
