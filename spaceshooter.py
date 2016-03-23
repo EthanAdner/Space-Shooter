@@ -84,15 +84,18 @@ class SpaceShip(Sprite):
         
     def cntrclockwise(self, event):
         self.vr=-.05
+        
+    def bullet(self, event):
+        Bullet(self.x, self.y, self.vx, self.vy)
     
-class SpaceShipShoot(SpaceShip):
+class Bullet(SpaceShip):
     
     asset1=ImageAsset("blast.png")
 
-    def __init__(self, positions):
-        super().__init__(SpaceShipShoot.asset1, position)
-        self.vsx = 0
-        self.vsy = 0
+    def __init__(self, x, y, vx, vy):
+        super().__init__(SpaceShipShoot.asset1, (x,y)))
+        self.vx = vx
+        self.vy = vy
         
         SpaceGame.listenKeyEvent("keydown", "s", self.shotOn)
         SpaceGame.listenKeyEvent("keyup", "s", self.shotOff)
