@@ -121,6 +121,7 @@ class SpaceGame(App):
         bg8 = Sprite(bg_asset, (512,512))
         SpaceShip((100,100))
         
+        
 
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
