@@ -60,6 +60,9 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+        SpaceGame.listenKeyEvent("keydown", "s", self.shoot)
+        SpaceGame.listenKeyEvent("keyup", "s", self.shoot)
+        
         self.fxcenter = self.fycenter = 0.5
 
     def step(self):
@@ -111,7 +114,12 @@ class SpaceShip(Sprite):
         
     def cntrclockwise(self, event):
         self.vr=-.05
-
+    
+    def shoot(self, event):
+        shot()
+    def shot(self):
+        blast= ImageAsset("blast.png")
+        blastim=Sprite(blast, (self.x, self.y))
 
 class SpaceGame(App):
    
