@@ -104,7 +104,7 @@ class SpaceShipShoot(SpaceShip):
         SpaceGame.listenKeyEvent("keyup", "s", self.shotOff)
         
     def shotOn(self, event):
-        
+        return()
         
         
 class SpaceGame(App):
