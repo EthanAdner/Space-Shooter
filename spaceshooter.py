@@ -116,6 +116,7 @@ class SpaceGame(App):
         noline = LineStyle(0, black)
         bg_asset = ImageAsset("images/starfield.jpg")
         bg_asset2= ImageAsset("sun.png")
+        sun = Sprite(bg_asset2, (500, 500))
         bg1 = Sprite(bg_asset, (0,0))
         bg2 = Sprite(bg_asset, (512,0))
         bg3 = Sprite(bg_asset, (0,512))
@@ -124,7 +125,7 @@ class SpaceGame(App):
         bg6 = Sprite(bg_asset, (1024,1024))
         bg7 = Sprite(bg_asset, (1536,1024))
         bg8 = Sprite(bg_asset, (512,512))
-        sun=Sprite(bg_asset2, (500, 500))
+        
         SpaceShip((100,100))
         
         
