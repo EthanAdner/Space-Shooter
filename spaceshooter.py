@@ -43,25 +43,14 @@ class SpaceShip(Sprite):
         self.vr = .0
         self.thrust = 0
         self.thrustframe = 1
-        
-        """
-        SpaceGame.listenKeyEvent("keydown", "d", self.right)
-        SpaceGame.listenKeyEvent("keyup", "d", self.stop)
-        SpaceGame.listenKeyEvent("keydown", "a", self.left)
-        SpaceGame.listenKeyEvent("keyup", "a", self.stop)
-        SpaceGame.listenKeyEvent("keydown", "w", self.up)
-        SpaceGame.listenKeyEvent("keyup", "w", self.stop)
-        SpaceGame.listenKeyEvent("keydown", "s", self.down)
-        SpaceGame.listenKeyEvent("keyup", "s", self.stop)
-        """
+    
         SpaceGame.listenKeyEvent("keydown", "q", self.clockwise)
         SpaceGame.listenKeyEvent("keyup", "q", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "e", self.cntrclockwise)
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        SpaceGame.listenKeyEvent("keydown", "s", self.shoot)
-        SpaceGame.listenKeyEvent("keyup", "s", self.shoot)
+        
         
         self.fxcenter = self.fycenter = 0.5
 
@@ -90,24 +79,11 @@ class SpaceShip(Sprite):
         self.thrust = 0
         
         
-    """def right(self, event):
-        self.vx=1"""
+   
         
     def stopr(self, event):
         self.vr=0
         
-    """def stop(self, event):
-        self.vx=0
-        self.vy=0
-        
-    def left(self, event):
-        self.vx=-1
-    
-    def up(self, event):
-        self.vy=-1
-        
-    def down(self, event):
-        self.vy=1"""
     
     def clockwise(self, event):
         self.vr=.05
@@ -115,12 +91,22 @@ class SpaceShip(Sprite):
     def cntrclockwise(self, event):
         self.vr=-.05
     
-    def shoot(self, event):
-        shot()
-    def shot(self):
-        blast= ImageAsset("blast.png")
-        blastim=Sprite(blast, (self.x, self.y))
+class SpaceShipShoot(SpaceShip):
+    
+    asset1=ImageAsset("blast.png")
 
+    def __init__(self, positions):
+        super().__init__(SpaceShipShoot.asset1, position)
+        self.vsx = 0
+        self.vsy = 0
+        
+        SpaceGame.listenKeyEvent("keydown", "s", self.shotOn)
+        SpaceGame.listenKeyEvent("keyup", "s", self.shotOff)
+        
+    def shotOn(self, event):
+        
+        
+        
 class SpaceGame(App):
    
     #Tutorial4 space game example.
