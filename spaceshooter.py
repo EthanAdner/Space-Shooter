@@ -128,7 +128,7 @@ class SpaceGame(App):
         bg_asset = ImageAsset("images/starfield.jpg")
         bg_asset2= ImageAsset("sun.png")
         
-        sun = Sprite(bg_asset2, (500, 500))
+        
         bg1 = Sprite(bg_asset, (0,0))
         bg2 = Sprite(bg_asset, (512,0))
         bg3 = Sprite(bg_asset, (0,512))
