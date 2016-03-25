@@ -29,6 +29,15 @@ SCREEN_HEIGHT = 700
         super().__init__(Stars.asset, position)
 
 """
+class sun(Sprite):
+    
+    asset1 = ImageAsset("sun.png")
+    
+    def __init__(self, position):
+        super()__init__(sun.asset1, position)
+        
+        
+        
 class SpaceShip(Sprite):
     
 #    Animated space ship
@@ -50,7 +59,7 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        SpaceGame.listenKeyEvent("keydown", "s", self.bullet)
+        #SpaceGame.listenKeyEvent("keydown", "s", self.bullet)
         #SpaceGame.listenKeyEvent("keyup", "s", self.thrustOff)
         
         
@@ -87,10 +96,10 @@ class SpaceShip(Sprite):
     def cntrclockwise(self, event):
         self.vr=-.05
         
-    def bullet(self, event):
-        Bullet(self.x, self.y, self.vx, self.vy)
+    #def bullet(self, event):
+     #   Bullet(self.x, self.y, self.vx, self.vy)
     
-class Bullet(SpaceShip):
+"""class Bullet(SpaceShip):
     
     asset1=ImageAsset("blast.png")
 
@@ -104,7 +113,7 @@ class Bullet(SpaceShip):
         
     def shotOn(self, event):
         return()
-        
+        """
         
 class SpaceGame(App):
    
@@ -127,6 +136,7 @@ class SpaceGame(App):
         bg7 = Sprite(bg_asset, (1536,1024))
         bg8 = Sprite(bg_asset, (512,512))
         SpaceShip((100,100))
+        sun((200,200))
         
         
 
