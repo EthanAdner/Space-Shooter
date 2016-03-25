@@ -35,7 +35,8 @@ class sun(Sprite):
     height = 50
     width = 50
     
-    
+    def __init__(self, position):
+        super()__init__(sun.asset1, position) 
         
         
         
