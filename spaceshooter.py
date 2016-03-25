@@ -2,7 +2,9 @@
 spaceshooter.py
 Author: Ethan Adner
 Credit: 
-
+ta presence, n'importe ou, me console. Au cas que ton ceour bat, je suis content
+mon amour pour toi est eternel et vivante
+sans vous, mes 
 Assignment:
 Write and submit a program that implements the spacewar game:
 https://github.com/HHS-IntroProgramming/Spacewar
@@ -36,7 +38,8 @@ class sun(Sprite):
     width = 50
     
     def __init__(self, position):
-        super()__init__(sun.asset1, position) 
+        super()__init__(sun.asset1, position)
+        
         
         
         
