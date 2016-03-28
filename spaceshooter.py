@@ -64,8 +64,7 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        #SpaceGame.listenKeyEvent("keydown", "s", self.bullet)
-        #SpaceGame.listenKeyEvent("keyup", "s", self.thrustOff)
+        
         
         
         self.fxcenter = self.fycenter = 0.5
@@ -75,8 +74,8 @@ class SpaceShip(Sprite):
         self.y += self.vy
         self.rotation += self.vr
         if self.thrust==1:
-            self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
-            self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
+            self.vx=1*cos(self.rotation+1/2*pi)+self.vx
+            self.vy=1*sin(self.rotation-1/2*pi)+self.vy
         if self.thrust == 1:
             self.setImage(self.thrustframe)
             self.thrustframe += 1
