@@ -31,7 +31,7 @@ SCREEN_HEIGHT = 700
         super().__init__(Stars.asset, position)
 
 """
-"""class sun(Sprite):
+class sun(Sprite):
     
     asset1 = ImageAsset("sun.png")
     height = 50
@@ -40,7 +40,7 @@ SCREEN_HEIGHT = 700
     def __init__(self, position):
         super()__init__(sun.asset1, position)
         
-        """
+        
         
         
 class SpaceShip(Sprite):
