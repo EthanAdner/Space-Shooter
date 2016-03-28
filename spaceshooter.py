@@ -33,7 +33,7 @@ SCREEN_HEIGHT = 700
 """
 class sun(Sprite):
     
-    asset1 = ImageAsset("sun.png")
+    asset1 = ImageAsset("images/sun.png")
     height = 50
     width = 50
     
@@ -132,14 +132,14 @@ class SpaceGame(App):
         bg_asset2= ImageAsset("sun.png")
         
         
-        """bg1 = Sprite(bg_asset, (0,0))
+        bg1 = Sprite(bg_asset, (0,0))
         bg2 = Sprite(bg_asset, (512,0))
         bg3 = Sprite(bg_asset, (0,512))
         bg4 = Sprite(bg_asset, (512,512))
         bg5 = Sprite(bg_asset, (1024,0))
         bg6 = Sprite(bg_asset, (1024,1024))
         bg7 = Sprite(bg_asset, (1536,1024))
-        bg8 = Sprite(bg_asset, (512,512))"""
+        bg8 = Sprite(bg_asset, (512,512))
         SpaceShip((100,100))
         sun((200,200))
         
