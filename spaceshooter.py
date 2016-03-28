@@ -20,6 +20,12 @@ from math import sin, cos, pi
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 700
 
+xli=[]
+for x in range(-25,25):
+    xli.append(x+500)
+yli=[]
+for x in range(-25, 25):
+    yli.append(x+300)
 
 """class Stars(Sprite):
 
@@ -74,8 +80,8 @@ class SpaceShip(Sprite):
         self.y += self.vy
         self.rotation += self.vr
         if self.thrust==1:
-            self.vx=100*cos(self.rotation+1/2*pi)+.5*self.vx
-            self.vy=100*sin(self.rotation-1/2*pi)+.5*self.vy
+            self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
+            self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
         if self.thrust == 1:
             self.setImage(self.thrustframe)
             self.thrustframe += 1
@@ -99,6 +105,12 @@ class SpaceShip(Sprite):
         
     def cntrclockwise(self, event):
         self.vr=-.05
+    
+    def explode(x, y):
+        x=self.x
+        y=self.y
+        if x in xli:
+            
         
     #def bullet(self, event):
      #   Bullet(self.x, self.y, self.vx, self.vy)
