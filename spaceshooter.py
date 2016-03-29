@@ -125,7 +125,7 @@ class SpaceGame(App):
         sun((500,300))
         SpaceShip((100,100))
         
-    def explode(spax, spay):
+    def explode(self, spax, spay):
         expl =  ImageAsset("images/explosion.png")
         ex = Sprite(expl, (spax, spay))
         
