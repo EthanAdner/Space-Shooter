@@ -8,8 +8,7 @@ sans vous, mes
 Assignment:
 Write and submit a program that implements the spacewar game:
 https://github.com/HHS-IntroProgramming/Spacewar
-"""
-"""
+
 tutorial4.py
 by E. Dennison
 """
@@ -19,14 +18,14 @@ from math import sin, cos, pi
 
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 700
-
+"""
 xli=[]
 for x in range(-25,25):
     xli.append(x+500)
 yli=[]
 for x in range(-25, 25):
     yli.append(x+300)
-
+"""
 
 class sun(Sprite):
     
@@ -36,8 +35,6 @@ class sun(Sprite):
     
     def __init__(self, position):
         super().__init__(sun.asset1, position)
-        
-        
         
         
 class SpaceShip(Sprite):
@@ -63,7 +60,6 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
         
         
-        
         self.fxcenter = self.fycenter = 0.5
 
     def step(self):
@@ -71,8 +67,8 @@ class SpaceShip(Sprite):
         self.y += self.vy
         self.rotation += self.vr
         if self.thrust==1:
-            self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
-            self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
+            self.vx=50.1*cos(self.rotation+1/2*pi)+self.vx
+            self.vy=50.1*sin(self.rotation-1/2*pi)+self.vy
         if self.thrust == 1:
             self.setImage(self.thrustframe)
             self.thrustframe += 1
@@ -106,8 +102,6 @@ class SpaceShip(Sprite):
             
         
   
-
-        
 class SpaceGame(App):
    
     #Tutorial4 space game example.
@@ -117,7 +111,6 @@ class SpaceGame(App):
         black = Color(0, 1)
         noline = LineStyle(0, black)
         bg_asset = ImageAsset("images/starfield.jpg")
-        
         
         
         bg1 = Sprite(bg_asset, (0,0))
