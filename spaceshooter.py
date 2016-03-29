@@ -101,6 +101,7 @@ class SpaceShip(Sprite):
             if (y<375 and y>325):
                 print("sdfdgbtb")
                 SpaceGame.explode(x, y)
+                print("dsfgsdfg")
     
         
   
