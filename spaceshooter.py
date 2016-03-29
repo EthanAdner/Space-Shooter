@@ -100,7 +100,8 @@ class SpaceShip(Sprite):
     def explode(x, y):
         x=self.x
         y=self.y
-        if x in xli:
+        if x in xli and y in yli:
+            class.explode(x, y)
             
         
   
@@ -128,6 +129,9 @@ class SpaceGame(App):
         bg8 = Sprite(bg_asset, (512,512))
         SpaceShip((100,100))
         sun((500,300))
+        
+    def explode(spax, spay):
+        
         
         
 
