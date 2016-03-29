@@ -27,16 +27,7 @@ yli=[]
 for x in range(-25, 25):
     yli.append(x+300)
 
-"""class Stars(Sprite):
 
-    asset = ImageAsset("images/starfield.jpg")
-    width = 512
-    height = 512
-
-    def __init__(self, position):
-        super().__init__(Stars.asset, position)
-
-"""
 class sun(Sprite):
     
     asset1 = ImageAsset("images/sun.png")
@@ -112,24 +103,8 @@ class SpaceShip(Sprite):
         if x in xli:
             
         
-    #def bullet(self, event):
-     #   Bullet(self.x, self.y, self.vx, self.vy)
-    
-"""class Bullet(SpaceShip):
-    
-    asset1=ImageAsset("blast.png")
+  
 
-    def __init__(self, x, y, vx, vy):
-        super().__init__(SpaceShipShoot.asset1, (x,y))
-        self.vx = vx
-        self.vy = vy
-        
-        SpaceGame.listenKeyEvent("keydown", "s", self.shotOn)
-        SpaceGame.listenKeyEvent("keyup", "s", self.shotOff)
-        
-    def shotOn(self, event):
-        return()
-        """
         
 class SpaceGame(App):
    
