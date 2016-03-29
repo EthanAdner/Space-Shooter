@@ -67,6 +67,7 @@ class SpaceShip(Sprite):
         self.x += self.vx
         self.y += self.vy
         self.rotation += self.vr
+        self.explode(self.x, self.y)
         if self.thrust==1:
             self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
             self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
@@ -95,12 +96,10 @@ class SpaceShip(Sprite):
         self.vr=-.05
     
     def explode(x, y):
-        x=self.x
-        y=self.y
         if (x<525 and x>475):
-            if (y<325 and y>375):
+            if (y<375 and y>325):
                 SpaceGame.explode(x, y)
-            
+    
         
   
 class SpaceGame(App):
@@ -122,7 +121,6 @@ class SpaceGame(App):
         bg6 = Sprite(bg_asset, (1024,1024))
         bg7 = Sprite(bg_asset, (1536,1024))
         bg8 = Sprite(bg_asset, (512,512))
-        
         sun((500,300))
         SpaceShip((100,100))
         
