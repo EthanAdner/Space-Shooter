@@ -97,11 +97,11 @@ class SpaceShip(Sprite):
     def cntrclockwise(self, event):
         self.vr=-.05
     
-    """def explode(x, y):
+    def explode(x, y):
         x=self.x
         y=self.y
         if x in xli and y in yli:
-            SpaceGame.explode(x, y)"""
+            SpaceGame.explode(x, y)
             
         
   
@@ -119,22 +119,21 @@ class SpaceGame(App):
         
         
         
-       """ bg1 = Sprite(bg_asset, (0,0))
+        bg1 = Sprite(bg_asset, (0,0))
         bg2 = Sprite(bg_asset, (512,0))
         bg3 = Sprite(bg_asset, (0,512))
         bg4 = Sprite(bg_asset, (512,512))
         bg5 = Sprite(bg_asset, (1024,0))
         bg6 = Sprite(bg_asset, (1024,1024))
         bg7 = Sprite(bg_asset, (1536,1024))
-        bg8 = Sprite(bg_asset, (512,512))"""
+        bg8 = Sprite(bg_asset, (512,512))
         SpaceShip((100,100))
         sun((500,300))
-        expl =  ImageAsset("images.explosion.jpg")
-        ex = Sprite(expl, (100, 100))
         
-    """def explode(spax, spay):
-        expl =  ImageAsset("images.explosion.jpg")
-        ex = Sprite(expl, (spax, spay))"""
+        
+    def explode(spax, spay):
+        expl =  ImageAsset("images/explosion.jpg)
+        ex = Sprite(expl, (spax, spay))
         
         
         
