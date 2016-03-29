@@ -35,6 +35,7 @@ class sun(Sprite):
     
     def __init__(self, position):
         super().__init__(sun.asset1, position)
+
         
         
 class SpaceShip(Sprite):
@@ -68,7 +69,7 @@ class SpaceShip(Sprite):
         self.rotation += self.vr
         if self.thrust==1:
             self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
-            self.vy=-.1*sin(self.rotation-1/2*pi)+self.vy
+            self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
         if self.thrust == 1:
             self.setImage(self.thrustframe)
             self.thrustframe += 1
