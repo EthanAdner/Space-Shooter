@@ -101,7 +101,7 @@ class SpaceShip(Sprite):
         x=self.x
         y=self.y
         if x in xli and y in yli:
-            class.explode(x, y)
+            SpaceGame.explode(x, y)
             
         
   
@@ -116,7 +116,7 @@ class SpaceGame(App):
         black = Color(0, 1)
         noline = LineStyle(0, black)
         bg_asset = ImageAsset("images/starfield.jpg")
-        bg_asset2= ImageAsset("sun.png")
+        
         
         
         bg1 = Sprite(bg_asset, (0,0))
@@ -131,6 +131,8 @@ class SpaceGame(App):
         sun((500,300))
         
     def explode(spax, spay):
+        expl =  ImageAsset("images.explosion.jpg")
+        ex = Sprite(expl, (spax, spay))
         
         
         
