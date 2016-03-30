@@ -99,7 +99,7 @@ class SpaceShip(Sprite):
     
     def explode(self, x, y):
         
-        if (x<525 and x>475):
+        if (x<1 and x>0):
             if (y<325 and y>275):
                 print("1")
                 SpaceGame.explode(x, y)
@@ -131,7 +131,7 @@ class SpaceGame(App):
         bg7 = Sprite(bg_asset, (1536,1024))
         bg8 = Sprite(bg_asset, (512,512))
         sun((500,300))
-        SpaceShip((100,100))
+        SpaceShip((525,325))
         
         
     def explode(xx, yy):
