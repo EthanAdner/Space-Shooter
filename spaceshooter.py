@@ -103,6 +103,8 @@ class SpaceShip(Sprite):
             if (y<325 and y>275):
                 print("1")
                 SpaceGame.explode(x, y)
+                self.x=1000
+                self.y=1000
                 return(True)
     
         
@@ -133,6 +135,7 @@ class SpaceGame(App):
     def explode(xx, yy):
         expl =  ImageAsset("images/explosion1.png")
         ex = Sprite(expl, (xx, yy))
+        
         return()
         
         
