@@ -129,9 +129,9 @@ class SpaceGame(App):
         
     def explode(self):
         print("abdjhcjhbvehjqbfjgv")
-        """expl =  ImageAsset("images/explosion.png")
+        expl =  ImageAsset("images/explosion.png")
         ex = Sprite(expl, (spax, spay))
-        print("jfgvsrtgwerge")"""
+        print("jfgvsrtgwerge")
         
         
 
