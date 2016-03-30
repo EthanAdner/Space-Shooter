@@ -99,9 +99,9 @@ class SpaceShip(Sprite):
         
         if (x<525 and x>475):
             if (y<375 and y>325):
-                print("sdfdgbtb")
+                print("1")
                 SpaceGame.explode(x, y)
-                print("dsfgsdfg")
+                print("2")
     
         
   
@@ -128,12 +128,12 @@ class SpaceGame(App):
         SpaceShip((100,100))
         
     def explode(self, xx, yy):
-        print("h")
+        print("3")
         return()
-        print("abdjhcjhbvehjqbfjgv")
+        print("4")
         expl =  ImageAsset("images/explosion.png")
         ex = Sprite(expl, (xx, yy))
-        print("jfgvsrtgwerge")
+        print("5")
         
         
 
