@@ -131,8 +131,9 @@ class SpaceGame(App):
         print("3")
         expl =  ImageAsset("images/explosion1.png")
         ex = Sprite(expl, (xx, yy))
-        print("4")
         
+        print("4")
+        return()
         
         
 
