@@ -108,6 +108,8 @@ class SpaceShip(Sprite):
                 self.vy=0
                 
                 return(True)
+    def shoot(self, event):
+        shot(self.x, self.y, self.vx, self.vy)
     
         
   
@@ -137,6 +139,10 @@ class SpaceGame(App):
     def explode(xx, yy):
         expl =  ImageAsset("images/explosion1.png")
         ex = Sprite(expl, (xx-100, yy-60))
+    
+    def shot(xx, yy, vx, vy):
+        sht= ImageAsser("images/blast.png")
+        st= Sprite(expl, ())
         
         
         
