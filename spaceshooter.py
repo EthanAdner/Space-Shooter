@@ -99,8 +99,8 @@ class SpaceShip(Sprite):
     
     def explode(self, x, y):
         
-        if (x<1 and x>0):
-            if (y<325 and y>275):
+        if (x<550 and x>450):
+            if (y<350 and y>250):
                 print("1")
                 SpaceGame.explode(x, y)
                 self.vr=.5
