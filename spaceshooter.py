@@ -128,10 +128,10 @@ class SpaceGame(App):
         SpaceShip((100,100))
         
     def explode(xx, yy):
+        print("3")
+        #expl =  ImageAsset("images/explosion.png")
+        #ex = Sprite(expl, (xx, yy))
         print("4")
-        expl =  ImageAsset("images/explosion.png")
-        ex = Sprite(expl, (xx, yy))
-        print("5")
         
         
         
