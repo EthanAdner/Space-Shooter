@@ -131,7 +131,7 @@ class SpaceGame(App):
         bg7 = Sprite(bg_asset, (1536,1024))
         bg8 = Sprite(bg_asset, (512,512))
         sun((500,300))
-        SpaceShip((525,325))
+        SpaceShip((100,100))
         
         
     def explode(xx, yy):
