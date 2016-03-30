@@ -109,7 +109,7 @@ class SpaceShip(Sprite):
                 self.vy=0
                 
                 return(True)
-   """def shoot(self, event):
+    """def shoot(self, event):
         shot(self.x, self.y, self.vx, self.vy)
     """
         
