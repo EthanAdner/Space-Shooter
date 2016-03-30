@@ -31,7 +31,7 @@ class sun(Sprite):
     
     asset1 = ImageAsset("images/sun.png")
     height = 50
-    width = 50
+    width = 10
     
     def __init__(self, position):
         super().__init__(sun.asset1, position)
@@ -131,11 +131,8 @@ class SpaceGame(App):
         
         
     def explode(xx, yy):
-        print("3")
         expl =  ImageAsset("images/explosion1.png")
         ex = Sprite(expl, (xx, yy))
-        
-        print("4")
         return()
         
         
