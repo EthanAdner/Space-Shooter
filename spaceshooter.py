@@ -142,7 +142,7 @@ class SpaceGame(App):
     
     def shot(xx, yy, vx, vy):
         sht= ImageAsser("images/blast.png")
-        st= Sprite(expl, ())
+        st= Sprite(expl, (xx,yy))
         
         
         
