@@ -104,8 +104,8 @@ class SpaceShip(Sprite):
                 print("1")
                 SpaceGame.explode(x, y)
                 self.vr=.5
-                self.vx=10
-                self.vy=10
+                self.vx=self.vx*10
+                self.vy==self.vy*10
                 
                 return(True)
     
