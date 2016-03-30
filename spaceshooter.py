@@ -68,6 +68,8 @@ class SpaceShip(Sprite):
         self.y += self.vy
         self.rotation += self.vr
         self.explode(self.x, self.y)
+        if self.explode(self.x, self.y) == True:
+            return()
         if self.thrust==1:
             self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
             self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
@@ -101,7 +103,7 @@ class SpaceShip(Sprite):
             if (y<325 and y>275):
                 print("1")
                 SpaceGame.explode(x, y)
-                print("2")
+                return(True)
     
         
   
