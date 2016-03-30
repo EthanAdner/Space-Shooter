@@ -106,6 +106,7 @@ class SpaceShip(Sprite):
                 self.vx=0
                 self.vy=0
                 #SpaceGame.explode(x, y)
+                explosion(x, y)
                 return(True)
     """def shoot(self, event):
         shot(self.x, self.y, self.vx, self.vy)
