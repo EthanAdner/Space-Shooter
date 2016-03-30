@@ -103,11 +103,11 @@ class SpaceShip(Sprite):
         if (x<550 and x>450):
             if (y<350 and y>250):
                 print("1")
-                SpaceGame.explode(x, y)
+                
                 self.vr=.5
                 self.vx=20
                 self.vy=0
-                
+                SpaceGame.explode(x, y)
                 return(True)
     """def shoot(self, event):
         shot(self.x, self.y, self.vx, self.vy)
