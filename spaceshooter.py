@@ -1,7 +1,7 @@
 """
 spaceshooter.py
 Author: Ethan Adner
-Credit: 
+Credit: Daniel Wilson, Base Game, Mr. D, Avery Wallace
 ta presence, n'importe ou, me console. Au cas que ton ceour bat, je suis content
 mon amour pour toi est eternel et vivante
 sans vous, mes 
@@ -102,8 +102,6 @@ class SpaceShip(Sprite):
         
         if (x<550 and x>450):
             if (y<350 and y>250):
-                print("1")
-                
                 self.vr=.5
                 self.vx=20
                 self.vy=0
@@ -113,7 +111,9 @@ class SpaceShip(Sprite):
         shot(self.x, self.y, self.vx, self.vy)
     """
         
-  
+        
+        
+class explosion(Sprite)
 class SpaceGame(App):
    
     #Tutorial4 space game example.
