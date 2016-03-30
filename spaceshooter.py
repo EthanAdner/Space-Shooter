@@ -129,10 +129,6 @@ class SpaceGame(App):
         
     def explode(self, xx, yy):
         return()
-        """print("4")
-        expl =  ImageAsset("images/explosion.png")
-        ex = Sprite(expl, (xx, yy))
-        print("5")"""
         
         
 
