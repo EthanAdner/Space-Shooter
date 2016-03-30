@@ -126,8 +126,7 @@ class SpaceGame(App):
         bg8 = Sprite(bg_asset, (512,512))
         sun((500,300))
         SpaceShip((100,100))
-        expl =  ImageAsset("images/explosion1.png")
-        ex = Sprite(expl, (0, 400))
+        
         
     def explode(xx, yy):
         print("3")
