@@ -129,8 +129,8 @@ class SpaceGame(App):
         
     def explode(xx, yy):
         print("3")
-        #expl =  ImageAsset("images/explosion.png")
-        #ex = Sprite(expl, (xx, yy))
+        expl =  ImageAsset("images/sun.png")
+        ex = Sprite(expl, (xx, yy))
         print("4")
         
         
