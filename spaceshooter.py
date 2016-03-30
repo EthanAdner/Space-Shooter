@@ -102,10 +102,10 @@ class SpaceShip(Sprite):
         
         if (x<550 and x>450):
             if (y<350 and y>250):
-                self.vr=.5
-                self.vx=20
+                #self.vr=.5
+                self.vx=0
                 self.vy=0
-                SpaceGame.explode(x, y)
+                #SpaceGame.explode(x, y)
                 return(True)
     """def shoot(self, event):
         shot(self.x, self.y, self.vx, self.vy)
@@ -113,7 +113,22 @@ class SpaceShip(Sprite):
         
         
         
-class explosion(Sprite)
+class explosion(Sprite):
+    asset = ImageAsset("images/explosion1.png", Frame(0,0,128,128), 10)
+    
+    def __init__(self, position):
+        super().__init__(ExplosionSmall.asset, position)
+        self.image = 0
+        self.center = (0.5, 0.5)
+        
+    def step(self):
+        self.setImage(self.image//2)  # slow it down
+        self.image = self.image + 1
+        if self.image == 20:
+            self.destroy()
+        
+        
+        
 class SpaceGame(App):
    
     #Tutorial4 space game example.
