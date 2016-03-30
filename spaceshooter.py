@@ -59,7 +59,7 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        SpaceGame.listenKeyEvent("keyup", "s", self.shoot)
+        #SpaceGame.listenKeyEvent("keyup", "s", self.shoot)
         
         
         self.fxcenter = self.fycenter = 0.5
@@ -109,9 +109,9 @@ class SpaceShip(Sprite):
                 self.vy=0
                 
                 return(True)
-    def shoot(self, event):
+   """def shoot(self, event):
         shot(self.x, self.y, self.vx, self.vy)
-    
+    """
         
   
 class SpaceGame(App):
@@ -140,11 +140,11 @@ class SpaceGame(App):
     def explode(xx, yy):
         expl =  ImageAsset("images/explosion1.png")
         ex = Sprite(expl, (xx-100, yy-60))
-    
+    """
     def shot(xx, yy, vx, vy):
         sht= ImageAsser("images/blast.png")
         st= Sprite(expl, (xx,yy))
-        
+        """
         
         
         
