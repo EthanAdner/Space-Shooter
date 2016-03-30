@@ -105,7 +105,7 @@ class SpaceShip(Sprite):
                 SpaceGame.explode(x, y)
                 self.vr=.5
                 self.vx=3
-                self.vy==0
+                self.vy=0
                 
                 return(True)
     
