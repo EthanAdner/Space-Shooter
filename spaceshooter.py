@@ -13,7 +13,7 @@ tutorial4.py
 by E. Dennison
 """
 
-from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame, Sound
+from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame, Sound, SoundAsset
 from math import sin, cos, pi
 
 SCREEN_WIDTH = 1024
