@@ -99,10 +99,6 @@ class SpaceShip(Sprite):
         self.vx=0
         self.vy=0
         explosion(self.position)
-                
-    
-        
-        
         
 class explosion(Sprite):
     asset = ImageAsset("images/explosion1.png", Frame(0,0,128,128), 10)
@@ -147,8 +143,8 @@ class SpaceGame(App):
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
-        explsions = self.GetSpritebyClass(explosion)
-        for explosion in explosions:
+        explosions = self.GetSpritebyClass(explosion)
+        for explosions in explosion:
             explosion.step()
 
 
