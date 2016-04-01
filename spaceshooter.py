@@ -58,19 +58,26 @@ class SpaceShip(Sprite):
         self.fxcenter = self.fycenter = 0.5
 
     def step(self):
+        print("1")
         self.x += self.vx
         self.y += self.vy
         self.rotation += self.vr
+        print("2")
         if self.thrust==1:
+            print("3")
             self.vx=.1*cos(self.rotation+1/2*pi)+self.vx
             self.vy=.1*sin(self.rotation-1/2*pi)+self.vy
         if self.thrust == 1:
+            print("4")
             self.setImage(self.thrustframe)
             self.thrustframe += 1
+            print("5")
             if self.thrustframe == 4:
                 self.thrustframe = 1
+            print("6")
         else:
             self.setImage(0)
+        print("7")
         collision=self.collidingWithSprites(Sun)
         print("boom1")
         if collision:
@@ -144,7 +151,7 @@ class SpaceGame(App):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
         explosions = self.GetSpritebyClass(explosion)
-        for explosions in explosion:
+        for explosion in explosions:
             explosion.step()
 
 
