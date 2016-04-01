@@ -160,6 +160,7 @@ class SpaceGame(App):
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
+        explsions = self.GetSpritebyClass(explosion)
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
