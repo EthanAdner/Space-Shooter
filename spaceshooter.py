@@ -155,6 +155,7 @@ class SpaceGame(App):
         print("9")
         for explosion in explosions:
             explosion.step()
+            print("step")
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
