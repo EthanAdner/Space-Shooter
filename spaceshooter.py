@@ -92,14 +92,10 @@ class SpaceShip(Sprite):
         self.vr=-.05
     
     def explode(self, x, y):
-        
-        if (x<550 and x>450):
-            if (y<350 and y>250):
-                self.visible=False
-                self.vx=0
-                self.vy=0
-                
-                explosion(self.position)
+        self.visible=False
+        self.vx=0
+        self.vy=0
+        explosion(self.position)
                 
     
         
