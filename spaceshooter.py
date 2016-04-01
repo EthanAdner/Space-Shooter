@@ -105,9 +105,9 @@ class SpaceShip(Sprite):
         self.visible=False
         self.vx=0
         self.vy=0
-        explosion(self.position)
+        ExplosionSmall(self.position)
         
-class explosion(Sprite):
+class ExplosionSmall(Sprite):
     asset = ImageAsset("images/explosion1.png", Frame(0,0,128,128), 10)
     boomasset = SoundAsset("sounds/explosion1.mp3")
     def __init__(self, position):
@@ -151,11 +151,11 @@ class SpaceGame(App):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
         print("8")
-        explosions = self.getSpritesbyClass(explosion)
-        print("9")
-        for explosion in explosions:
-            explosion.step()
-            print("step")
+        explosions= self.getSpritesbyClass(ExplosionSmall)
+        """print("9")
+        for ExplosionSmall in explosions:
+            ExplosionSmall.step()
+            print("step")"""
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
