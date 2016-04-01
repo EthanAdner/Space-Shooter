@@ -52,7 +52,7 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keyup", "e", self.stopr)
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
-        #SpaceGame.listenKeyEvent("keyup", "s", self.shoot)
+        
         
         
         self.fxcenter = self.fycenter = 0.5
@@ -72,8 +72,11 @@ class SpaceShip(Sprite):
         else:
             self.setImage(0)
         colision=self.collidingWithSprites(Sun)
+        print("boom1")
         if collision:
+            print("bomom2")
             self.explode(self)
+        print("bnoom3")
             
 
     def thrustOn(self, event):
