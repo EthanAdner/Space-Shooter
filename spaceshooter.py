@@ -94,7 +94,7 @@ class SpaceShip(Sprite):
     def cntrclockwise(self, event):
         self.vr=-.05
     
-    def explode(self, event):
+    def explode(self):
         self.visible=False
         self.vx=0
         self.vy=0
