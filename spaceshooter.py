@@ -71,7 +71,7 @@ class SpaceShip(Sprite):
                 self.thrustframe = 1
         else:
             self.setImage(0)
-        colision=self.collidingWithSprites(Sun)
+        colision=self.CollidingWithSprites(Sun)
         print("boom1")
         if collision:
             print("bomom2")
