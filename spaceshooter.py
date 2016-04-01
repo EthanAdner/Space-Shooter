@@ -13,19 +13,12 @@ tutorial4.py
 by E. Dennison
 """
 
-from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame, Sound
 from math import sin, cos, pi
 
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 700
-"""
-xli=[]
-for x in range(-25,25):
-    xli.append(x+500)
-yli=[]
-for x in range(-25, 25):
-    yli.append(x+300)
-"""
+
 
 class sun(Sprite):
     
@@ -116,11 +109,13 @@ class SpaceShip(Sprite):
         
 class explosion(Sprite):
     asset = ImageAsset("images/explosion1.png", Frame(0,0,128,128), 10)
-    
+    boomasset = SoundAsset("sounds/explosion1.mp3")
     def __init__(self, position):
         super().__init__(ExplosionSmall.asset, position)
         self.image = 0
         self.center = (0.5, 0.5)
+        self.boom = Sound(ExplosionSmall.boomasset)
+        self.boom.play()
         
     def step(self):
         self.setImage(self.image//2)  # slow it down
