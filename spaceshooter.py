@@ -145,13 +145,7 @@ class SpaceGame(App):
         SpaceShip((100,100))
         
         
-    def explode(xx, yy):
-        expl =  ImageAsset("images/explosion1.png")
-        ex = Sprite(expl, (xx-100, yy-60))
-    """
-    def shot(xx, yy, vx, vy):
-        sht= ImageAsser("images/blast.png")
-        st= Sprite(expl, (xx,yy))
+    
         """
         
         
