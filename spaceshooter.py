@@ -152,9 +152,9 @@ class SpaceGame(App):
             ship.step()
         print("8")
         explosions= self.getSpritesbyClass(ExplosionSmall)
-        """print("9")
+        print("9")
         for ExplosionSmall in explosions:
-            ExplosionSmall.step()
+            explosion.step()
             print("step")"""
 
 
