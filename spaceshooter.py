@@ -153,9 +153,9 @@ class SpaceGame(App):
         print("8")
         explosions= self.getSpritesbyClass(ExplosionSmall)
         print("9")
-        for ExplosionSmall in explosions:
+        for explosion in explosions:
             explosion.step()
-            print("step")"""
+            print("step")
 
 
 myapp = SpaceGame(SCREEN_WIDTH, SCREEN_HEIGHT)
