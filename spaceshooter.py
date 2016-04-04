@@ -83,6 +83,8 @@ class SpaceShip(Sprite):
         if collision:
             print("bomom2")
             self.explode(self)
+            self.x=0
+            self.y=0
             print("#$")
         print("bnoom3")
             
@@ -103,12 +105,12 @@ class SpaceShip(Sprite):
         self.vr=-.05
     
     def explode(self):
-        print("#")
-        self.visible=False
+        
+        self.visible=False"""
         self.vx=0
         print("##")
         self.vy=0
-        print("###")
+        print("###")"""
         ExplosionSmall(self.position)
         
 class ExplosionSmall(Sprite):
