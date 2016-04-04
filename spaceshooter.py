@@ -102,8 +102,10 @@ class SpaceShip(Sprite):
         self.vr=-.05
     
     def explode(self):
+        print("#")
         self.visible=False
         self.vx=0
+        print("##")
         self.vy=0
         print("###")
         ExplosionSmall(self.position)
