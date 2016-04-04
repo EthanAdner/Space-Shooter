@@ -83,6 +83,7 @@ class SpaceShip(Sprite):
         if collision:
             print("bomom2")
             self.explode(self)
+            print("#$")
         print("bnoom3")
             
 
